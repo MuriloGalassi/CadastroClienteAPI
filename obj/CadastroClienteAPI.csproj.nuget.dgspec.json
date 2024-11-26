@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\murilo.galassi.SEESP\\Documents\\Meu\\CadastroClienteAPI\\CadastroClienteAPI.csproj": {}
+    "C:\\Users\\muril\\source\\repos\\MuriloGalassi\\CadastroClienteAPI\\CadastroClienteAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\murilo.galassi.SEESP\\Documents\\Meu\\CadastroClienteAPI\\CadastroClienteAPI.csproj": {
+    "C:\\Users\\muril\\source\\repos\\MuriloGalassi\\CadastroClienteAPI\\CadastroClienteAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\murilo.galassi.SEESP\\Documents\\Meu\\CadastroClienteAPI\\CadastroClienteAPI.csproj",
+        "projectUniqueName": "C:\\Users\\muril\\source\\repos\\MuriloGalassi\\CadastroClienteAPI\\CadastroClienteAPI.csproj",
         "projectName": "CadastroClienteAPI",
-        "projectPath": "C:\\Users\\murilo.galassi.SEESP\\Documents\\Meu\\CadastroClienteAPI\\CadastroClienteAPI.csproj",
-        "packagesPath": "C:\\Users\\murilo.galassi.SEESP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\murilo.galassi.SEESP\\Documents\\Meu\\CadastroClienteAPI\\obj\\",
+        "projectPath": "C:\\Users\\muril\\source\\repos\\MuriloGalassi\\CadastroClienteAPI\\CadastroClienteAPI.csproj",
+        "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muril\\source\\repos\\MuriloGalassi\\CadastroClienteAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\murilo.galassi.SEESP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -47,23 +54,33 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[7.1.0, )"
             }
           },
           "imports": [
@@ -85,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
