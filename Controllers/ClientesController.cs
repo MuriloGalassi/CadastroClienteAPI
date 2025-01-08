@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using CadastroClienteAPI.Data;
 using CadastroClienteAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using CadastroClienteAPI.Data.Context;
 
 
 namespace CadastroClienteAPI.Controllers
@@ -54,7 +54,7 @@ namespace CadastroClienteAPI.Controllers
         public async Task<IActionResult> UpdateCliente(int id, [FromBody] Cliente cliente)
         {
             if (id != cliente.Id) 
-                return BadRequest();
+                return NotFound();
 
             _context.Entry(cliente).State = EntityState.Modified;
 
